@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>玛雅 电影-玛雅文明题材电影推荐与观影指南</title>
+<meta name="description" content="围绕玛雅文明题材的电影内容，整理玛雅电影类型、代表作品、历史背景、观影顺序与选择建议，帮助你快速了解与玛雅相关的电影世界。">
+<meta name="keywords" content="玛雅 电影,玛雅文明电影,玛雅题材电影,古文明电影,玛雅纪录片,探险电影">
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --stone:#1c1a17;
+  --stone-2:#26231e;
+  --stone-3:#332f28;
+  --jade:#2f8f6f;
+  --jade-light:#4fbd97;
+  --gold:#c9963f;
+  --gold-light:#e6bd6a;
+  --clay:#a35a3a;
+  --paper:#f3ede1;
+  --paper-2:#e6ddcb;
+  --ink:#2a251d;
+  --ink-soft:#5a5142;
+  --line:rgba(201,150,63,.28);
+}
+html{scroll-behavior:smooth}
+body{
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;
+  background:var(--stone);
+  color:var(--paper);
+  line-height:1.7;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+.wrap{width:100%;max-width:1180px;margin:0 auto;padding:0 20px}
+
+/* ---------- 顶部导航 ---------- */
+.topbar{
+  position:sticky;top:0;z-index:50;
+  background:rgba(24,22,19,.92);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);
+}
+.topbar-inner{
+  display:flex;align-items:center;justify-content:space-between;
+  gap:16px;height:64px;
+}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700;letter-spacing:.5px}
+.brand-mark{
+  width:34px;height:34px;border-radius:8px;
+  background:linear-gradient(140deg,var(--jade),var(--gold));
+  display:grid;place-items:center;
+  font-size:15px;color:#14120f;font-weight:800;
+  box-shadow:0 0 0 1px rgba(255,255,255,.12) inset;
+}
+.brand-text{display:flex;flex-direction:column;line-height:1.15}
+.brand-text b{font-size:16px;color:var(--paper)}
+.brand-text span{font-size:11px;color:var(--gold-light);letter-spacing:2px;font-weight:500}
+.nav{display:flex;align-items:center;gap:4px;flex-wrap:wrap}
+.nav a{
+  font-size:14px;color:var(--paper-2);padding:8px 12px;border-radius:6px;
+  transition:.2s;
+}
+.nav a:hover{background:var(--stone-3);color:var(--gold-light)}
+.nav a.cta{
+  background:linear-gradient(135deg,var(--jade),var(--jade-light));
+  color:#0f1a16;font-weight:700;
+}
+.nav a.cta:hover{filter:brightness(1.08);color:#0f1a16}
+.burger{display:none;background:none;border:1px solid var(--line);color:var(--paper);border-radius:6px;padding:6px 10px;font-size:18px;cursor:pointer}
+
+/* ---------- 首屏 ---------- */
+.hero{
+  position:relative;overflow:hidden;
+  background:
+    radial-gradient(900px 420px at 12% -10%,rgba(47,143,111,.35),transparent 60%),
+    radial-gradient(700px 380px at 92% 8%,rgba(201,150,63,.22),transparent 62%),
+    linear-gradient(180deg,#211e19,#171512);
+  border-bottom:1px solid var(--line);
+}
+.hero::after{
+  content:"";position:absolute;inset:0;
+  background-image:
+    repeating-linear-gradient(90deg,rgba(255,255,255,.03) 0 1px,transparent 1px 64px),
+    repeating-linear-gradient(0deg,rgba(255,255,255,.03) 0 1px,transparent 1px 64px);
+  pointer-events:none;
+}
+.hero-inner{
+  position:relative;z-index:2;
+  display:grid;grid-template-columns:1.15fr .85fr;gap:44px;
+  padding:64px 0 56px;align-items:center;
+}
+.tagline{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:12px;letter-spacing:2px;color:var(--gold-light);
+  border:1px solid var(--line);border-radius:999px;
+  padding:6px 14px;margin-bottom:20px;background:rgba(201,150,63,.06);
+}
+.tagline i{width:6px;height:6px;border-radius:50%;background:var(--jade-light);display:block}
+.hero h1{
+  font-size:clamp(28px,4.2vw,46px);
+  line-height:1.25;letter-spacing:1px;margin-bottom:18px;
+}
+.hero h1 em{
+  font-style:normal;
+  background:linear-gradient(100deg,var(--gold-light),var(--jade-light));
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.hero p.lead{
+  font-size:16px;color:#cfc6b4;max-width:640px;margin-bottom:26px;
+}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap}
+.btn{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:12px 22px;border-radius:8px;font-size:15px;font-weight:600;
+  transition:.2s;border:1px solid transparent;cursor:pointer;
+}
+.btn-primary{background:linear-gradient(135deg,var(--jade),var(--jade-light));color:#0e1a15}
+.btn-primary:hover{filter:brightness(1.08);transform:translateY(-1px)}
+.btn-ghost{border-color:var(--line);color:var(--gold-light);background:rgba(201,150,63,.05)}
+.btn-ghost:hover{background:rgba(201,150,63,.14)}
+
+.hero-panel{
+  background:linear-gradient(160deg,var(--stone-2),#1a1815);
+  border:1px solid var(--line);border-radius:16px;padding:22px;
+  box-shadow:0 24px 60px rgba(0,0,0,.45);
+}
+.hero-panel h2{
+  font-size:14px;letter-spacing:2px;color:var(--gold-light);
+  font-weight:600;margin-bottom:16px;display:flex;align-items:center;gap:8px;
+}
+.hero-panel h2::before{content:"";width:16px;height:2px;background:var(--jade-light);display:block}
+.quick-list{list-style:none;display:flex;flex-direction:column;gap:10px}
+.quick-list li{
+  display:flex;gap:12px;align-items:flex-start;
+  font-size:14px;color:#cbc2b1;
+  padding:10px 12px;border-radius:8px;background:rgba(255,255,255,.03);
+  border:1px solid rgba(255,255,255,.05);
+}
+.quick-list li b{color:var(--paper);font-weight:600}
+.quick-list .num{
+  flex:0 0 24px;height:24px;border-radius:6px;
+  background:rgba(79,189,151,.16);color:var(--jade-light);
+  font-size:12px;display:grid;place-items:center;font-weight:700;
+}
+
+/* ---------- 通用区块 ---------- */
+section{padding:64px 0}
+.section-head{margin-bottom:34px;max-width:760px}
+.section-head .kicker{
+  font-size:12px;letter-spacing:3px;color:var(--jade-light);
+  text-transform:uppercase;margin-bottom:10px;display:block;
+}
+.section-head h2{
+  font-size:clamp(22px,2.6vw,30px);letter-spacing:.5px;margin-bottom:12px;
+}
+.section-head p{color:#b8af9e;font-size:15px}
+.alt-bg{background:linear-gradient(180deg,#1a1815,#211e19);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+
+/* ---------- 类型卡片 ---------- */
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+.card{
+  background:linear-gradient(165deg,var(--stone-2),#1b1916);
+  border:1px solid rgba(255,255,255,.07);
+  border-radius:14px;padding:24px;transition:.25s;
+  position:relative;overflow:hidden;
+}
+.card::before{
+  content:"";position:absolute;top:0;left:0;width:100%;height:3px;
+  background:linear-gradient(90deg,var(--jade),var(--gold));
+  opacity:0;transition:.25s;
+}
+.card:hover{transform:translateY(-4px);border-color:var(--line);box-shadow:0 18px 40px rgba(0,0,0,.4)}
+.card:hover::before{opacity:1}
+.card .icon{
+  width:42px;height:42px;border-radius:10px;margin-bottom:16px;
+  display:grid;place-items:center;font-size:19px;
+  background:rgba(47,143,111,.14);border:1px solid rgba(79,189,151,.28);
+}
+.card h3{font-size:17px;margin-bottom:10px}
+.card p{font-size:14px;color:#b3aa99}
+.card ul{margin-top:12px;list-style:none;display:flex;flex-direction:column;gap:6px}
+.card ul li{font-size:13px;color:#9d9484;padding-left:14px;position:relative}
+.card ul li::before{content:"";position:absolute;left:0;top:9px;width:5px;height:5px;border-radius:50%;background:var(--gold)}
+
+/* ---------- 代表作品列表 ---------- */
+.film-list{display:flex;flex-direction:column;gap:16px}
+.film{
+  display:grid;grid-template-columns:78px 1fr auto;gap:20px;align-items:center;
+  background:linear-gradient(120deg,rgba(255,255,255,.035),rgba(255,255,255,.01));
+  border:1px solid rgba(255,255,255,.07);border-radius:12px;
+  padding:18px 20px;transition:.22s;
+}
+.film:hover{border-color:var(--line);background:linear-gradient(120deg,rgba(201,150,63,.09),rgba(255,255,255,.01))}
+.film .poster{
+  width:78px;height:78px;border-radius:10px;
+  display:grid;place-items:center;font-size:22px;font-weight:800;color:#14120f;
+  background:linear-gradient(140deg,var(--gold),var(--clay));
+}
+.film .poster.b{background:linear-gradient(140deg,var(--jade),var(--jade-light))}
+.film .poster.c{background:linear-gradient(140deg,#6b7f9e,#9fb3c8)}
+.film .poster.d{background:linear-gradient(140deg,#8d6b9e,#c8a8d8)}
+.film-body h3{font-size:16px;margin-bottom:6px;display:flex;flex-wrap:wrap;align-items:center;gap:8px}
+.film-body h3 span{
+  font-size:11px;font-weight:500;color:var(--gold-light);
+  border:1px solid var(--line);border-radius:4px;padding:1px 7px;
+}
+.film-body p{font-size:13.5px;color:#ada492}
+.film-tag{
+  font-size:12px;color:var(--jade-light);white-space:nowrap;
+  border:1px solid rgba(79,189,151,.3);border-radius:999px;padding:4px 12px;
+  background:rgba(47,143,111,.1);
+}
+
+/* ---------- 时间线 ---------- */
+.timeline{position:relative;padding-left:28px}
+.timeline::before{
+  content:"";position:absolute;left:6px;top:6px;bottom:6px;width:2px;
+  background:linear-gradient(180deg,var(--jade),var(--gold),transparent);
+}
+.tl-item{position:relative;padding-bottom:28px}
+.tl-item:last-child{padding-bottom:0}
+.tl-item::before{
+  content:"";position:absolute;left:-28px;top:6px;width:14px;height:14px;border-radius:50%;
+  background:var(--stone);border:2px solid var(--gold);
+}
+.tl-item h3{font-size:16px;margin-bottom:6px;color:var(--gold-light)}
+.tl-item p{font-size:14px;color:#b0a795}
+
+/* ---------- 指南（步骤） ---------- */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;counter-reset:step}
+.step{
+  background:linear-gradient(180deg,var(--stone-2),#1b1916);
+  border:1px solid rgba(255,255,255,.07);border-radius:12px;padding:22px 18px;
+  position:relative;
+}
+.step::before{
+  counter-increment:step;content:counter(step,decimal-leading-zero);
+  font-size:26px;font-weight:800;color:rgba(201,150,63,.35);
+  display:block;margin-bottom:12px;font-family:Georgia,serif;
+}
+.step h3{font-size:15px;margin-bottom:8px}
+.step p{font-size:13.5px;color:#a9a08e}
+
+/* ---------- 侧栏 + 正文 ---------- */
+.split{display:grid;grid-template-columns:1fr 320px;gap:40px;align-items:start}
+.article h3{font-size:18px;margin:26px 0 12px;color:var(--gold-light)}
+.article h3:first-child{margin-top:0}
+.article p{font-size:15px;color:#c0b7a5;margin-bottom:14px}
+.article ul{margin:0 0 16px 0;list-style:none;display:flex;flex-direction:column;gap:8px}
+.article ul li{font-size:14.5px;color:#b5ac9a;padding-left:18px;position:relative}
+.article ul li::before{
+  content:"";position:absolute;left:0;top:10px;width:6px;height:6px;
+  border-radius:2px;background:var(--jade-light);transform:rotate(45deg);
+}
+.side{
+  background:linear-gradient(170deg,var(--stone-2),#1a1815);
+  border:1px solid var(--line);border-radius:14px;padding:22px;
+  position:sticky;top:84px;
+}
+.side h3{font-size:15px;margin-bottom:14px;color:var(--gold-light);letter-spacing:1px}
+.side ul{list-style:none;display:flex;flex-direction:column;gap:10px}
+.side ul li{font-size:13.5px;color:#b5ac9a;padding-bottom:10px;border-bottom:1px dashed rgba(255,255,255,.08)}
+.side ul li:last-child{border-bottom:none;padding-bottom:0}
+.side ul li b{color:var(--paper);display:block;font-size:14px;margin-bottom:2px}
+
+/* ---------- FAQ ---------- */
+.faq{display:flex;flex-direction:column;gap:12px;max-width:900px}
+.faq details{
+  background:linear-gradient(160deg,var(--stone-2),#1b1916);
+  border:1px solid rgba(255,255,255,.07);border-radius:12px;
+  padding:0 20px;transition:.2s;
+}
+.faq details[open]{border-color:var(--line)}
+.faq summary{
+  cursor:pointer;list-style:none;padding:18px 0;
+  font-size:15.5px;font-weight:600;color:var(--paper);
+  display:flex;justify-content:space-between;align-items:center;gap:14px;
+}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{
+  content:"+";font-size:20px;color:var(--gold-light);font-weight:400;
+  transition:.2s;flex:0 0 auto;
+}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq .answer{padding:0 0 20px;font-size:14.5px;color:#b3aa99;border-top:1px dashed rgba(255,255,255,.08);padding-top:16px}
+
+/* ---------- 页脚 ---------- */
+footer{
+  background:#141210;border-top:1px solid var(--line);
+  padding:52px 0 28px;margin-top:20px;
+}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:32px;margin-bottom:36px}
+.foot-brand .brand{margin-bottom:14px}
+.foot-brand p{font-size:13.5px;color:#8d8577;max-width:320px}
+.foot-col h4{font-size:14px;color:var(--gold-light);margin-bottom:14px;letter-spacing:1px}
+.foot-col ul{list-style:none;display:flex;flex-direction:column;gap:9px}
+.foot-col ul li a{font-size:13.5px;color:#9c9486;transition:.2s}
+.foot-col ul li a:hover{color:var(--jade-light)}
+.foot-bottom{
+  border-top:1px solid rgba(255,255,255,.07);padding-top:22px;
+  display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;
+  font-size:12.5px;color:#7b7466;
+}
+
+/* ---------- 响应式 ---------- */
+@media (max-width:1000px){
+  .hero-inner{grid-template-columns:1fr;gap:32px;padding:48px 0 44px}
+  .grid-3{grid-template-columns:repeat(2,1fr)}
+  .steps{grid-template-columns:repeat(2,1fr)}
+  .split{grid-template-columns:1fr}
+  .side{position:static}
+  .foot-grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:760px){
+  .nav{display:none}
+  .nav.open{
+    display:flex;position:absolute;top:64px;left:0;right:0;
+    flex-direction:column;align-items:stretch;
+    background:#1a1815;border-bottom:1px solid var(--line);padding:12px 20px 18px;
+  }
+  .nav.open a{padding:11px 10px}
+  .burger{display:block}
+  .grid-3,.grid-2{grid-template-columns:1fr}
+  section{padding:48px 0}
+  .film{grid-template-columns:60px 1fr;gap:14px}
+  .film .poster{width:60px;height:60px;font-size:18px}
+  .film-tag{grid-column:2;justify-self:start;margin-top:4px}
+}
+@media (max-width:520px){
+  .steps{grid-template-columns:1fr}
+  .foot-grid{grid-template-columns:1fr}
+  .hero-actions .btn{width:100%;justify-content:center}
+}
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap topbar-inner">
+    <a class="brand" href="#top">
+      <span class="brand-mark">玛</span>
+      <span class="brand-text">
+        <b>玛雅光影</b>
+        <span>MAYA CINEMA</span>
+      </span>
+    </a>
+    <button class="burger" id="burger" aria-label="展开导航">☰</button>
+    <nav class="nav" id="nav">
+      <a href="#types">题材分类</a>
+      <a href="#films">代表作品</a>
+      <a href="#history">历史脉络</a>
+      <a href="#guide">观影指南</a>
+      <a href="#faq">常见问题</a>
+      <a href="#films" class="cta">开始浏览</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- 首屏 -->
+  <section class="hero">
+    <div class="wrap hero-inner">
+      <div>
+        <span class="tagline"><i></i>古文明题材 · 观影专题</span>
+        <h1>玛雅电影：从<em>丛林遗迹</em>到银幕叙事的完整观影地图</h1>
+        <p class="lead">
+          “玛雅电影”通常指以玛雅文明为背景、或围绕中美洲丛林遗迹展开故事的影视作品。
+          这类影片横跨探险、历史剧情、奇幻与纪录片等方向，画面常出现金字塔、雨林与象形文字。
+          本页帮你理清它们的类型差异、代表作品脉络，以及挑选与观看时的实用建议。
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#films">查看代表作品</a>
+          <a class="btn btn-ghost" href="#guide">阅读观影指南</a>
+        </div>
+      </div>
+
+      <aside class="hero-panel">
+        <h2>快速了解</h2>
+        <ul class="quick-list">
+          <li><span class="num">1</span><span><b>题材边界：</b>既包括严肃的历史剧情片，也包括以遗迹为舞台的探险与奇幻作品。</span></li>
+          <li><span class="num">2</span><span><b>常见元素：</b>金字塔神庙、热带雨林、象形文字、历法与天文、考古探险。</span></li>
+          <li><span class="num">3</span><span><b>观看顺序：</b>建议先看纪录片建立背景，再进入剧情片与商业冒险片。</span></li>
+          <li><span class="num">4</span><span><b>注意区分：</b>影视创作常做艺术加工，与考古学结论并不完全一致。</span></li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  <!-- 题材分类 -->
+  <section id="types">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker">Genre</span>
+        <h2>玛雅题材电影的四种主要方向</h2>
+        <p>同样是“玛雅电影”，不同作品的重心差别很大。先分清方向，再按自己的兴趣挑选，能省下不少试片时间。</p>
+      </div>
+
+      <div class="grid-3">
+        <article class="card">
+          <div class="icon">🗿</div>
+          <h3>历史剧情向</h3>
+          <p>以玛雅城邦社会为背景，关注阶层、祭祀、战争与日常生活，叙事节奏相对沉稳。</p>
+          <ul>
+            <li>强调时代氛围与人物处境</li>
+            <li>对白与服饰考据较用心</li>
+            <li>适合想看“人”而非“奇观”的观众</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <div class="icon">🧭</div>
+          <h3>丛林探险向</h3>
+          <p>把遗迹当作冒险舞台，围绕寻宝、失踪、诅咒或科考展开，节奏快、悬念强。</p>
+          <ul>
+            <li>视觉冲击力强，娱乐性高</li>
+            <li>常出现机关、密道与神庙场景</li>
+            <li>适合放松观看、追求刺激</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <div class="icon">🔮</div>
+          <h3>奇幻与预言向</h3>
+          <p>借玛雅历法、预言或神话元素构建世界观，往往与灾难、时间循环等设定结合。</p>
+          <ul>
+            <li>想象空间大，设定自由度广</li>
+            <li>与真实历史关联较弱</li>
+            <li>适合喜欢类型混搭的观众</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <div class="icon">🎞️</div>
+          <h3>纪录片与科普</h3>
+          <p>以考古发现、遗址测绘和铭文解读为主线，是了解玛雅文明最稳妥的入口。</p>
+          <ul>
+            <li>信息密度高，可信度较好</li>
+            <li>常配合遗址实景与三维复原</li>
+            <li>适合作为观影前的背景补充</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <div class="icon">🌎</div>
+          <h3>合拍与国际视角</h3>
+          <p>由不同国家团队拍摄，视角与语言各异，对同一段历史会有不同侧重。</p>
+          <ul>
+            <li>可对比不同文化语境下的表达</li>
+            <li>字幕质量对观感影响较大</li>
+            <li>适合想拓宽视野的观众</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <div class="icon">🧩</div>
+          <h3>元素借用型</h3>
+          <p>玛雅只是世界观拼图的一角，可能只出现遗迹、符号或历法设定，并非核心主题。</p>
+          <ul>
+            <li>主线往往与古文明无关</li>
+            <li>观赏时不必强求历史准确</li>
+            <li>适合顺带了解文化符号的传播</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 代表作品 -->
+  <section id="films" class="alt-bg">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker">Selected Works</span>
+        <h2>值得关注的玛雅相关影片与内容</h2>
+        <p>以下按类型方向整理，便于按兴趣定位。影片的具体版本、时长与发行信息请以实际播放入口为准。</p>
+      </div>
+
+      <div class="film-list">
+        <article class="film">
+          <div class="poster">A</div>
+          <div class="film-body">
+            <h3>丛林探险类影片 <span>探险 · 悬念</span></h3>
+            <p>以中美洲雨林与古代遗迹为舞台，围绕考古队、寻宝或失踪事件展开，画面多强调神庙、密林与未知感。</p>
+          </div>
+          <span class="film-tag">节奏快</span>
+        </article>
+
+        <article class="film">
+          <div class="poster b">B</div>
+          <div class="film-body">
+            <h3>古典玛雅社会题材 <span>历史 · 剧情</span></h3>
+            <p>聚焦城邦时期的社会结构与普通人的处境，服饰、语言与仪式场景通常经过较多考据准备。</p>
+          </div>
+          <span class="film-tag">重氛围</span>
+        </article>
+
+        <article class="film">
+          <div class="poster c">C</div>
+          <div class="film-body">
+            <h3>考古与遗址纪录片 <span>纪录 · 科普</span></h3>
+            <p>跟随考古工作者的实地记录，介绍遗址布局、铭文解读与天文观测方式，适合建立基础认知。</p>
+          </div>
+          <span class="film-tag">信息密</span>
+        </article>
+
+        <article class="film">
+          <div class="poster d">D</div>
+          <div class="film-body">
+            <h3>历法与预言题材 <span>奇幻 · 类型混搭</span></h3>
+            <p>借用长计历、预言等元素构建设定，多与灾难、时间等主题结合，娱乐属性明显强于历史属性。</p>
+          </div>
+          <span class="film-tag">想象强</span>
+        </article>
+
+        <article class="film">
+          <div class="poster">E</div>
+          <div class="film-body">
+            <h3>自然与人文旅行影像 <span>纪实 · 风光</span></h3>
+            <p>以遗址所在的自然与人文环境为主线，适合在观影之外补充地理与当代生活的了解。</p>
+          </div>
+          <span class="film-tag">轻松看</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 历史脉络 -->
+  <section id="history">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker">Background</span>
+        <h2>看懂玛雅题材，需要知道的几条背景线索</h2>
+        <p>不必成为考古爱好者，但了解以下几点，会明显提升观影时的理解度。</p>
+      </div>
+
+      <div class="grid-2">
+        <div class="timeline">
+          <div class="tl-item">
+            <h3>不是单一国家，而是多城邦并存</h3>
+            <p>玛雅文明分布在今天的中美洲一带，由众多城邦构成，彼此之间有联盟、竞争与贸易往来，并非统一帝国。</p>
+          </div>
+          <div class="tl-item">
+            <h3>文字与历法是重要标识</h3>
+            <p>象形文字、长计历与天文观测是玛雅文明最具辨识度的成就，也是影视作品最常借用的视觉与叙事元素。</p>
+          </div>
+          <div class="tl-item">
+            <h3>“消失”是一种简化说法</h3>
+            <p>古典期部分城邦衰落，但玛雅人群与语言延续至今。影视里常见的“突然消失”多为叙事需要的简化表达。</p>
+          </div>
+          <div class="tl-item">
+            <h3>遗址与自然环境紧密相关</h3>
+            <p>雨林、水源与地形深刻影响了城邦的选址与兴衰，这也是探险类影片偏爱丛林场景的原因之一。</p>
+          </div>
+        </div>
+
+        <div class="card" style="align-self:start">
+          <div class="icon">📌</div>
+          <h3>观影时常见的三类偏差</h3>
+          <p>影视创作与学术研究目标不同，出现偏差是常态。识别它们，能让观看更清醒。</p>
+          <ul>
+            <li>把祭祀与献祭过度戏剧化，忽略其社会语境</li>
+            <li>把不同时期的建筑与器物混用在同一个场景</li>
+            <li>把预言、末日等现代想象直接当作史实</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 观影指南 -->
+  <section id="guide" class="alt-bg">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker">How to Watch</span>
+        <h2>四步挑到适合自己的玛雅电影</h2>
+        <p>与其随机点开，不如按下面的顺序缩小范围，通常能更快找到对味的作品。</p>
+      </div>
+
+      <div class="steps">
+        <div class="step">
+          <h3>先定目的</h3>
+          <p>想了解历史，优先纪录片与历史剧情；想放松娱乐，直接看探险与奇幻类型。</p>
+        </div>
+        <div class="step">
+          <h3>再看时长与节奏</h3>
+          <p>碎片时间选单集纪录片，整块时间留给长片，避免中途打断影响体验。</p>
+        </div>
+        <div class="step">
+          <h3>确认字幕与语言</h3>
+          <p>涉及原住民语言的影片，字幕质量直接影响理解，尽量选择译制规范的版本。</p>
+        </div>
+        <div class="step">
+          <h3>看完做一次对照</h3>
+          <p>把影片设定与可靠资料对照，既能纠偏，也能加深对文明本身的理解。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 正文 + 侧栏 -->
+  <section>
+    <div class="wrap split">
+      <div class="article">
+        <h3>为什么“玛雅电影”很难用一句话定义</h3>
+        <p>
+          玛雅文明的时间跨度长、地域范围广，涉及的语言与社会形态也很复杂。
+          当它被搬上银幕时，创作者往往只截取其中一小部分——可能是某座神庙，
+          可能是历法中的某个符号，也可能只是“丛林深处有未知文明”这样一个意象。
+          因此，同样是搜索“玛雅电影”，有人想找的是严肃的历史剧情，有人想找的是带遗迹元素的冒险片，
+          还有人只是想看一部介绍遗址的纪录片。先明确自己要的是哪一种，比记住片名更有用。
+        </p>
+
+        <h3>挑选时可以重点留意的几个细节</h3>
+        <ul>
+          <li><strong>建筑与场景：</strong>不同时期的建筑风格有差异，若影片把差异很大的样式混在一起，通常说明考据程度有限。</li>
+          <li><strong>语言处理：</strong>使用原住民语言并配字幕的作品，往往在氛围营造上更用心；全程使用通用语言则更偏向大众化表达。</li>
+          <li><strong>叙事视角：</strong>是从外部探险者视角切入，还是从当地人的视角讲述，会带来完全不同的观感。</li>
+          <li><strong>对白密度：</strong>信息量大的作品需要专注观看，适合安静环境；节奏舒缓的纪录片则可以在通勤时收听式观看。</li>
+        </ul>
+
+        <h3>把观影和了解文明结合起来</h3>
+        <p>
+          如果对玛雅文明本身产生了兴趣，建议把影片当作入口而不是结论。
+          可以先看纪录片建立时间与地理的基本框架，再阅读可靠的博物馆或学术机构公开资料，
+          最后回头看剧情片，你会更容易分辨哪些是创作，哪些是有依据的呈现。
+          这种“先框架、后细节”的顺序，通常比直接看商业大片更能留下有效认知。
+        </p>
+
+        <h3>观看体验上的实用建议</h3>
+        <p>
+          这类影片普遍画面偏暗、场景复杂，屏幕亮度和环境光线对观感影响较大。
+          如果条件允许，尽量在光线可控的环境下观看，并适当提高字幕字号。
+          涉及多线叙事的作品，可以在中途暂停梳理人物关系，避免因信息过载而中途放弃。
+        </p>
+      </div>
+
+      <aside class="side">
+        <h3>本站内容速览</h3>
+        <ul>
+          <li><b>题材分类</b>六种常见方向，快速定位兴趣点</li>
+          <li><b>代表作品</b>按类型整理，避免盲目试片</li>
+          <li><b>历史脉络</b>四条背景线索，提升理解度</li>
+          <li><b>观影指南</b>四步筛选法，减少选择成本</li>
+          <li><b>常见问题</b>集中回答高频疑问</li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="alt-bg">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker">FAQ</span>
+        <h2>关于玛雅电影的常见问题</h2>
+        <p>下面是搜索与观看过程中最常被提到的几个问题，回答尽量保持稳妥、可验证。</p>
+      </div>
+
+      <div class="faq">
+        <details open>
+          <summary>“玛雅电影”具体指哪一类影片？</summary>
+          <div class="answer">
+            它并不是一个严格的电影分类术语，而是对“以玛雅文明为背景或大量使用玛雅元素”的影视作品的通俗称呼。
+            既包括历史剧情片、纪录片，也包括以遗迹为舞台的探险片和借用历法设定的奇幻片。
+          </div>
+        </details>
+
+        <details>
+          <summary>想了解真实历史，应该先看什么？</summary>
+          <div class="answer">
+            建议优先选择纪录片或博物馆、学术机构参与的科普影像，它们通常更注重遗址实测与铭文解读。
+            剧情片和商业冒险片可以作为兴趣入口，但不宜直接当作历史依据。
+          </div>
+        </details>
+
+        <details>
+          <summary>影片里的献祭和预言情节可信吗？</summary>
+          <div class="answer">
+            这类情节往往为了戏剧效果做了强化或简化。仪式活动在玛雅社会中确实存在，
+            但具体形式与规模需要结合考古与文献资料判断，影视呈现通常不等于学术结论。
+          </div>
+        </details>
+
+        <details>
+          <summary>孩子适合看这类影片吗？</summary>
+          <div class="answer">
+            需要分作品判断。纪录片一般较为平缓，但部分探险或奇幻题材可能包含紧张、惊悚画面。
+            建议先确认影片的分级与内容提示，再决定是否适合共同观看。
+          </div>
+        </details>
+
+        <details>
+          <summary>观看时字幕看不清怎么办？</summary>
+          <div class="answer">
+            可以在播放器中调大字幕字号、提高对比度，或选择画质更清晰的版本。
+            如果设备支持，调整屏幕亮度与关闭强环境光也能明显改善阅读体验。
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a class="brand" href="#top">
+          <span class="brand-mark">玛</span>
+          <span class="brand-text">
+            <b>玛雅光影</b>
+            <span>MAYA CINEMA</span>
+          </span>
+        </a>
+        <p>一个围绕玛雅文明题材影视作品的专题页面，提供类型梳理、作品索引与观影建议，帮助观众更高效地找到想看的内容。</p>
+      </div>
+
+      <div class="foot-col">
+        <h4>内容导航</h4>
+        <ul>
+          <li><a href="#types">题材分类</a></li>
+          <li><a href="#films">代表作品</a></li>
+          <li><a href="#history">历史脉络</a></li>
+          <li><a href="#guide">观影指南</a></li>
+        </ul>
+      </div>
+
+      <div class="foot-col">
+        <h4>热门方向</h4>
+        <ul>
+          <li><a href="#types">历史剧情片</a></li>
+          <li><a href="#types">丛林探险片</a></li>
+          <li><a href="#types">纪录片与科普</a></li>
+          <li><a href="#types">奇幻与预言题材</a></li>
+        </ul>
+      </div>
+
+      <div class="foot-col">
+        <h4>帮助</h4>
+        <ul>
+          <li><a href="#faq">常见问题</a></li>
+          <li><a href="#guide">如何挑选</a></li>
+          <li><a href="#history">背景知识</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="foot-bottom">
+      <span>本页内容为影视题材整理与观影建议，不构成学术结论，具体作品信息请以官方发布为准。</span>
+      <span>© 玛雅光影 · 古文明观影专题</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var burger = document.getElementById('burger');
+  var nav = document.getElementById('nav');
+  if(burger && nav){
+    burger.addEventListener('click', function(){
+      nav.classList.toggle('open');
+    });
+    nav.addEventListener('click', function(e){
+      if(e.target.tagName === 'A' && window.innerWidth <= 760){
+        nav.classList.remove('open');
+      }
+    });
+  }
+})();
+</script>
+
+</body>
+                     </html>
